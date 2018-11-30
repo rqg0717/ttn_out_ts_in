@@ -124,10 +124,8 @@ func main() {
 
 	log.Debug("After this point, the program won't show anything until we receive an uplink message from the device.")
 	var ch ThingSpeakChannel
-	ch.key = "MVS4MO0G0AV1VG8Z"
+	ch.key = "AJSKASJAKJSAKSJ"// shoud read from env
 	ch.fields = make(map[int]string)
-
-
 
 	for message := range uplink {
 		hexPayload := hex.EncodeToString(message.PayloadRaw)
